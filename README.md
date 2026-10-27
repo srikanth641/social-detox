@@ -129,7 +129,7 @@ flowchart TD
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/social-detox.git
+git clone https://github.com/srikanth641/social-detox.git
 cd social-detox
 
 # 2. Install root and package dependencies
@@ -412,7 +412,7 @@ npm test --prefix server
 ## 20. Live Deployment & Repository URLs
 
 - **Live HTTPS Website URL:** `https://social-detox-production.up.railway.app` *(or custom domain)*
-- **GitHub Repository URL:** `https://github.com/your-username/social-detox`
+- **GitHub Repository URL:** `https://github.com/srikanth641/social-detox`
 
 ---
 
