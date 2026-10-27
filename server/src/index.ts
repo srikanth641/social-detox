@@ -103,7 +103,7 @@ async function bootstrap() {
   }
 
   // 3. Start Listening
-  server.listen(ENV.PORT, () => {
+  server.listen(ENV.PORT, '0.0.0.0', () => {
     console.log(`[Server] 🚀 Social Detox server running on port ${ENV.PORT}`);
     console.log(`[Server] API root: http://localhost:${ENV.PORT}/api/v1`);
     console.log(`[Server] Health check: http://localhost:${ENV.PORT}/api/v1/health`);

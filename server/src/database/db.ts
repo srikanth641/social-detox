@@ -27,8 +27,8 @@ class DatabaseManager {
         console.log('[DB] Connecting to PostgreSQL database...');
         const pool = new Pool({
           connectionString: ENV.DATABASE_URL,
-          connectionTimeoutMillis: 3000,
-          ssl: ENV.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+          connectionTimeoutMillis: 5000,
+          ssl: (ENV.NODE_ENV === 'production' || !ENV.DATABASE_URL.includes('localhost')) ? { rejectUnauthorized: false } : false,
         });
 
         // Test connection
